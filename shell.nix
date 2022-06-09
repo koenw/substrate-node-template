@@ -23,6 +23,7 @@ with nixpkgs; pkgs.mkShell {
     clang
     pkg-config
     rust-wasm
+    openssl
   ] ++ stdenv.lib.optionals stdenv.isDarwin [
     darwin.apple_sdk.frameworks.Security
   ];
